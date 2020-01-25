@@ -1,7 +1,7 @@
 DB = {
     HOST:   "localhost",
-    USER:   "phpmyadmin",
-    PASS:   "codebrew",
+    USER:   "root",
+    PASS:   "",
     SCHEMA: "test"
 }
 

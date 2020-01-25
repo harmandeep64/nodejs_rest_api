@@ -1,7 +1,9 @@
-module.exports = function(app){
-    const customers = require("../controllers/CustomerController.js");
+const customers      = require("../controllers/CustomerController.js");
+const CheckBasicAuth = require('../middleware/BasicAuth.js');
 
-    app.post("/customers", customers.create);
+module.exports = function(app){
+    
+    app.post("/customers", CheckBasicAuth, customers.create);
 
     app.get("/customers", customers.findAll);
 
@@ -12,4 +14,5 @@ module.exports = function(app){
     app.delete("/customers/:customerId", customers.delete);
 
     app.delete("/customers", customers.deleteAll);
+    
 };
