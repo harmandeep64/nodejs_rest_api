@@ -1,10 +1,16 @@
 DB = {
     HOST:   "localhost",
-    USER:   "root",
-    PASS:   "",
+    USER:   "phpmyadmin",
+    PASS:   "codebrew",
     SCHEMA: "test"
 }
 
+Auth = {
+    USER: "harman",
+    PASS: "harman"
+}
+
 module.exports = {
-    "DB": DB
+    "DB": DB,
+    "AUTH": Auth,
 }

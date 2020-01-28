@@ -1,5 +1,5 @@
 const mysql = require('mysql');
-const app   = require("../config/app.js");
+const app   = require("../config/app");
 
 const connection = mysql.createConnection({
     host: app.DB.HOST,

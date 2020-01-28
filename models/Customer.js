@@ -1,4 +1,4 @@
-const sql = require("../config/database.js");
+const sql = require("../config/database");
 
 const Customer = function(customer) {
     this.email = customer.email;
