@@ -4,6 +4,7 @@ const instance      = express();
 
 instance.use(bodyParser.json());
 instance.use(bodyParser.urlencoded({ extended: true }));
+instance.set('view engine', 'pug');
 
 instance.get("/", (req, res) => {
     res.json({ message: "Hi Harman here." });
@@ -11,4 +12,4 @@ instance.get("/", (req, res) => {
 
 require("./config/routes")(instance);
 
-instance.listen(3000);
+instance.listen(3001);
